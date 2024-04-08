@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Prakasam Bhavan"
+      },
+      "geometry": {
+        "coordinates": [79.40082983581755, 13.627672795094142],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Volley Ball court"
+      },
+      "geometry": {
+        "coordinates": [79.40158645421815, 13.62734515761305],
+        "type": "Point"
+      }
+    }
+  ]
+}

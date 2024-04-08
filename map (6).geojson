@@ -1,0 +1,423 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Prakasam Bhavan"
+      },
+      "geometry": {
+        "coordinates": [79.40082983581755, 13.627672795094142],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Volley Ball court"
+      },
+      "geometry": {
+        "coordinates": [79.40158645421815, 13.62734515761305],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gate 1"
+      },
+      "geometry": {
+        "coordinates": [79.4040882583621, 13.627743436809098],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A Block"
+      },
+      "geometry": {
+        "coordinates": [79.40341430852101, 13.62828393701973],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Health center"
+      },
+      "geometry": {
+        "coordinates": [79.40446057346759, 13.628358766064537],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Svu Gym"
+      },
+      "geometry": {
+        "coordinates": [79.40390433250491, 13.629290136508416],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dept.Physical Education"
+      },
+      "geometry": {
+        "coordinates": [79.40386723878015, 13.6297913195137],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "D block"
+      },
+      "geometry": {
+        "coordinates": [79.40295981616657, 13.62952679412318],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "D Block"
+      },
+      "geometry": {
+        "coordinates": [79.40250323331821, 13.630874293011857],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "C Block"
+      },
+      "geometry": {
+        "coordinates": [79.4026482601144, 13.630260619787194],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "E Block"
+      },
+      "geometry": {
+        "coordinates": [79.40405065477637, 13.630734965123736],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Library"
+      },
+      "geometry": {
+        "coordinates": [79.40123414047235, 13.631186407422803],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Auditorium"
+      },
+      "geometry": {
+        "coordinates": [79.39912560298995, 13.629475931899435],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Computer Center"
+      },
+      "geometry": {
+        "coordinates": [79.39942474884259, 13.628638114317695],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [79.4021985713901, 13.632914590242535],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Commerce Department"
+      },
+      "geometry": {
+        "coordinates": [79.40041343454385, 13.632362069531041],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "J block"
+      },
+      "geometry": {
+        "coordinates": [79.40232213942403, 13.631613273243133],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Department of library Sciences"
+      },
+      "geometry": {
+        "coordinates": [79.40184039885344, 13.631414543828],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "H Block"
+      },
+      "geometry": {
+        "coordinates": [79.40032672420244, 13.634030810367236],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "New MBA Building"
+      },
+      "geometry": {
+        "coordinates": [79.39778779436244, 13.633586060833707],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Virology Department"
+      },
+      "geometry": {
+        "coordinates": [79.39797893987594, 13.63281903601984],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dept.Distance Education"
+      },
+      "geometry": {
+        "coordinates": [79.39836395251359, 13.63165188227157],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Women Premises2"
+      },
+      "geometry": {
+        "coordinates": [79.39725415598383, 13.630521342605036],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Annapurna canteen"
+      },
+      "geometry": {
+        "coordinates": [79.39822552987653, 13.62973204805401],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Andhra Bank"
+      },
+      "geometry": {
+        "coordinates": [79.3974698384697, 13.629483512310784],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "NCC Bhavan"
+      },
+      "geometry": {
+        "coordinates": [79.39667565526679, 13.62892633402511],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "NSS Bhavan"
+      },
+      "geometry": {
+        "coordinates": [79.3969686291772, 13.628653282267294],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Administative Building"
+      },
+      "geometry": {
+        "coordinates": [79.39780494724818, 13.629019449421364],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SBI"
+      },
+      "geometry": {
+        "coordinates": [79.39626403100624, 13.628354803807582],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Open Air Auditorium"
+      },
+      "geometry": {
+        "coordinates": [79.39765853911757, 13.626255981773795],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SVU college of Engineering"
+      },
+      "geometry": {
+        "coordinates": [79.39707003461979, 13.627150457614562],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dept. civil Engineering"
+      },
+      "geometry": {
+        "coordinates": [79.39727814428238, 13.628039217247661],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mechanical Engineering"
+      },
+      "geometry": {
+        "coordinates": [79.39722964349511, 13.627355417755922],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Structural Engineering"
+      },
+      "geometry": {
+        "coordinates": [79.39633323456923, 13.627312761735368],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Viswa Pragathi Block"
+      },
+      "geometry": {
+        "coordinates": [79.39555177814259, 13.630052953900687],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Viswateja Block"
+      },
+      "geometry": {
+        "coordinates": [79.39577472304353, 13.629675996982925],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Visweswara Block"
+      },
+      "geometry": {
+        "coordinates": [79.39460178242535, 13.629175135884054],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Old MBA Building"
+      },
+      "geometry": {
+        "coordinates": [79.39908130946668, 13.627027188093322],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gate 4"
+      },
+      "geometry": {
+        "coordinates": [79.39862266580934, 13.626029599130945],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gate 3"
+      },
+      "geometry": {
+        "coordinates": [79.4004898185359, 13.626641507120283],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gate 2"
+      },
+      "geometry": {
+        "coordinates": [79.40196353154312, 13.627073234276594],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Women Premises"
+      },
+      "geometry": {
+        "coordinates": [79.39996896490311, 13.627661237150718],
+        "type": "Point"
+      }
+    }
+  ]
+}

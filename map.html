@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map Directions with Clicks</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet">
+    <style>
+        body { margin: 0; padding: 0; }
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+
+        .marker {
+            background-color: #333;
+            border-radius: 50%;
+            display: block;
+            width: 20px;
+            height: 20px;
+        }
+
+        .start-marker {
+            background-color: green;
+        }
+
+        .end-marker {
+            background-color: red;
+        }
+
+        #navigation-instructions {
+            position: absolute;
+            margin: 20px;
+            padding: 10px;
+            background: rgba(255,255,255,0.8);
+            border-radius: 5px;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+<div id="navigation-instructions"></div>
+
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1Ijoic2FpY2hhcmFuZ2VvbWFwcyIsImEiOiJjbHU4NnF5aGkwZDV5MmxsbDZsamNvbWtxIn0.Fc0DIWkhYaLdTo5ifGIxYg';
+
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/saicharangeomaps/clu86uu3u00eg01qr17cocxgt',
+    center: [79.40304594470149, 13.629167029492834], // Starting position [lng, lat]
+        zoom: 18.228649883196468, // Starting zoom level
+        bearing: 163.19999999999845, // Initial bearing in degrees
+        pitch: 59.499999999999986 
+    
+});
+
+let startPoint, endPoint;
+
+function addMarker(coordinates, type) {
+    const el = document.createElement('div');
+    el.className = `marker ${type === 'start' ? 'start-marker' : 'end-marker'}`;
+
+    new mapboxgl.Marker(el).setLngLat(coordinates).addTo(map);
+}
+
+async function getDirections(start, end) {
+    const url = `https://api.mapbox.com/directions/v5/mapbox/driving/${start.join(',')};${end.join(',')}?geometries=geojson&steps=true&access_token=${mapboxgl.accessToken}`;
+    const response = await fetch(url);
+    const data = await response.json();
+    const route = data.routes[0].geometry;
+
+    if (map.getSource('route')) {
+        map.getSource('route').setData(route);
+    } else {
+        map.addSource('route', {
+            type: 'geojson',
+            data: route
+        });
+        map.addLayer({
+            id: 'route',
+            type: 'line',
+            source: 'route',
+            layout: {
+                'line-join': 'round',
+                'line-cap': 'round'
+            },
+            paint: {
+                'line-color': '#888',
+                'line-width': 8
+            }
+        });
+    }
+
+    displayNavigationInstructions(data.routes[0].legs);
+}
+
+function displayNavigationInstructions(legs) {
+    const instructionsElement = document.getElementById('navigation-instructions');
+    instructionsElement.innerHTML = '<h3>Navigation Instructions</h3>';
+    legs.forEach(leg => {
+        leg.steps.forEach((step, index) => {
+            const instructionElement = document.createElement('p');
+            instructionElement.innerHTML = `${index + 1}. ${step.maneuver.instruction}`;
+            instructionsElement.appendChild(instructionElement);
+        });
+    });
+}
+
+map.on('click', function(e) {
+    const coordinates = [e.lngLat.lng, e.lngLat.lat];
+
+    if (!startPoint) {
+        startPoint = coordinates;
+        addMarker(startPoint, 'start');
+    } else if (!endPoint) {
+        endPoint = coordinates;
+        addMarker(endPoint, 'end');
+        getDirections(startPoint, endPoint);
+    } else {
+        startPoint = coordinates;
+        endPoint = undefined;
+        // Reset the map for a new route
+        map.getSource('route').setData({
+            type: 'Feature',
+            properties: {},
+            geometry: {
+                type: 'LineString',
+                coordinates: []
+            }
+        });
+        document.getElementById('navigation-instructions').innerHTML = ''; // Clear instructions
+        addMarker(startPoint, 'start'); // Add new start marker
+    }
+});
+</script>
+</body>
+</html>

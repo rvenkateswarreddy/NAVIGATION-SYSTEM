@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Add Search Box to a Web Map</title>
+    <!-- Default styling. Feel free to remove! -->
+    <link
+      href="https://api.mapbox.com/mapbox-assembly/v1.3.0/assembly.min.css"
+      rel="stylesheet"
+    />
+    <script
+      id="search-js"
+      defer=""
+      src="https://api.mapbox.com/search-js/v1.0.0-beta.19/web.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Load Mapbox GL JS -->
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+
+    <div id="map" style="position: absolute; width: 100%; height: 100%"></div>
+    <script>
+      const ACCESS_TOKEN =
+        "pk.eyJ1Ijoic2FpY2hhcmFuZ2VvbWFwcyIsImEiOiJjbHU4NnF5aGkwZDV5MmxsbDZsamNvbWtxIn0.Fc0DIWkhYaLdTo5ifGIxYg";
+
+      mapboxgl.accessToken = ACCESS_TOKEN;
+      const map = new mapboxgl.Map({
+        container: "map",
+        style: "mapbox://styles/mapbox/streets-v12",
+        center: [-73.99209, 40.68933],
+        zoom: 8.8,
+      });
+
+      const searchJS = document.getElementById("search-js");
+      searchJS.onload = function () {
+        const searchBox = new MapboxSearchBox();
+        searchBox.accessToken = ACCESS_TOKEN;
+        searchBox.options = {
+          types: "address,poi",
+          proximity: [-73.99209, 40.68933],
+        };
+        searchBox.marker = true;
+        searchBox.mapboxgl = mapboxgl;
+        map.addControl(searchBox);
+      };
+    </script>
+  </body>
+</html>
